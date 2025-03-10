@@ -20,11 +20,10 @@
         <div class="max-w-screen-xl mx-auto p-6">
             <!-- Header -->
             <header class="flex justify-between items-center mb-8">
-                <h1 class="text-3xl font-bold text-gray-800">POS System</h1>
+                <a href="{{ url('/pos') }}"><h1 class="text-3xl font-bold text-gray-800">POS System</h1></a>
                 
                 <!-- Navigation Menu -->
                 <nav class="flex space-x-4">
-                    <a href="{{ url('/pos') }}" class="bg-green-600  text-white py-2 px-4 rounded-lg hover:bg-green-700">POS</a>
                     <a href="{{ route('products.manage') }}" class="bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Manage Products</a>
                     <a href="{{ route('orders.index') }}" class="bg-cyan-600 text-white py-2 px-4 rounded-lg hover:bg-cyan-700">Orders</a>
                     <form method="POST" action="{{ route('logout') }}">
